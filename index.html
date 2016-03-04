@@ -4,14 +4,14 @@
     <title>Shenanigans 4 dais</title>
 </head>
 <body ng-controller="Grr">
-    <input type="text" ng-model='items.title' placeholder='Title of the Movie'>
-    <input type="date" ng-model="items.date" placeholder="What Year was the Movie Released">
-    <button ng-click="submission(items.title, items.date)">Add to the list!</button>
+    <input type="text" ng-model='items.name' placeholder='Title of the Movie'>
+    <input type="date" ng-model="items.year" placeholder="What Year was the Movie Released">
+    <button ng-click="submission(items.name, items.year)">Add to the list!</button>
     
     <div ng-repeat="items in itemlist track by $index"><a href="" ng-click='destroy()'>X</a>
-    <p>{{item.title}}</p>
+    <p>{{item.name}}</p>
     
-    <p>{{item.date}}</p>
+    <p>{{item.year}}</p>
     </div>
     
     
