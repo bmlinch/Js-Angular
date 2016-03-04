@@ -8,10 +8,10 @@
     <input type="date" ng-model="items.year" placeholder="What Year was the Movie Released">
     <button ng-click="submission(items.name, items.year)">Add to the list!</button>
     
-    <div ng-repeat="items in itemlist track by $index"><a href="" ng-click='destroy()'>X</a>
-    <p>{{item.name}}</p>
+    <div ng-repeat="items in itemlist track by $index"><a href="" ng-click='destroy($index)'>X</a>
+    <p>{{items.name}}</p>
     
-    <p>{{item.year}}</p>
+    <p>{{items.year}}</p>
     </div>
     
     

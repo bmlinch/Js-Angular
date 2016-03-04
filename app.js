@@ -52,11 +52,14 @@ app.controller('Grr', function($scope){
   year: 1937
 }]
     
-    $scope.destroy = function(item){
-        item.remove()
+    $scope.destroy = function(i){
+       $scope.itemlist.splice(i, 1)
     }
     
     $scope.submission = function(name, year){
-        $scope.itemlist.push(name, year)
+        this.itemlist.push(name, year)
     }
+    
+
+    
 })
