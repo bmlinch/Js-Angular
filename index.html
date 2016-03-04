@@ -1,0 +1,25 @@
+<html ng-app="poi">
+<head>
+    <meta charset="UTF-8">
+    <title>Shenanigans 4 dais</title>
+</head>
+<body ng-controller="Grr">
+    <input type="text" ng-model='items.title' placeholder='Title of the Movie'>
+    <input type="text" ng-model='items.url' placeholder="Place the image URL here">
+    <input type="date" ng-model="items.date" placeholder="What Year was the Movie Released">
+    <button ng-click="submission(items.title, items.url, items.date)">Add to the list!</button>
+    
+    <div ng-repeat="items in itemlist track by $index"><a href="" ng-click='destroy($index)'>X</a>
+    <p>{{item.title}}</p>
+    <img ng-src="" alt="items.url">
+    <p>{{item.date}}</p>
+    </div>
+    
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src='app.js'></script>
+</body>
+</html>
