@@ -56,7 +56,7 @@ app.controller('Grr', function($scope){
         item.remove()
     }
     
-    $scope.submission = function(title, url, date){
-        $scope.itemlist.push(title, url, date)
+    $scope.submission = function(name, year){
+        $scope.itemlist.push(name, year)
     }
 })
